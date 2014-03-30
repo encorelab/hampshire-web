@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <title>Hampshire web</title>
+    <meta charset="utf-8">
+    <link href="css/hampshire.css" rel="stylesheet">
+
+    <script type="text/javascript" src="libs/jquery-2.1.0.min.js"></script>
+
+    <script type="text/javascript" src="js/hampshire.js"></script>
+</head>
+<body>
+    <div>
+        <p>
+            Content goes here :)
+        </p>
+        <button class="click-me">Click me!</button>
+    </div>
+
+    <script type="text/javascript">
+        jQuery(document).ready(function() {
+          // extending jQuery http://stackoverflow.com/questions/31044/is-there-an-exists-function-for-jquery
+          jQuery.fn.exists = function(){return this.length>0;}
+          Hampshire.init();
+        });
+    </script>
+</body>
+</html>
