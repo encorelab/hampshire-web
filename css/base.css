@@ -1,0 +1,14 @@
+.jumbotron {
+
+}
+
+.navbar {
+  background-color: #3b3a3a;
+  border: none;
+}
+
+.navbar-nav li a{
+  color: #fff !important;
+}
+
+
