@@ -12,11 +12,12 @@
 .navbar {
   background: transparent;
   border: none;
-  margin-top: -80px;
+  margin-top: -90px;
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover {
   background-color: #738C62;
+  border-radius: 20px;
 }
 
 .carousel-caption a, .carousel-caption a:hover{
