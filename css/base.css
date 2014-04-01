@@ -15,28 +15,13 @@
   margin-top: -73px;
 }
 
-.navbar-nav li a{
-  color: #fff !important;
-}
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover {
   background-color: #738C62;
 }
-
-h1 a {
-  text-decoration: none !important;
-  color: #fff;
-}
-
-h1 a:hover, a:focus {
-	color: white;
-	text-decoration: none;
-}
-
 .item img{
 	max-height: 375px;
-	margin-right: auto;
-	margin-left: auto;
+  margin: 0 auto;
 }
 
 .image-circle {
