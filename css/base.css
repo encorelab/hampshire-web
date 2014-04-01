@@ -10,26 +10,30 @@
 }
 
 .navbar {
-  background-color: #3b3a3a;
+  background: transparent;
   border: none;
-  margin-top: -73px;
+  margin-top: -80px;
 }
-
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover {
   background-color: #738C62;
 }
+
+.carousel-caption a, .carousel-caption a:hover{
+  color: #fff;
+  text-decoration: none;
+}
+
 .item img{
 	max-height: 375px;
   margin: 0 auto;
 }
 
-.image-circle {
-	margin-right: auto;
-	margin-left:auto;
+.img-circle {
+	margin: 0 auto;
+  display: block;
 }
 
 .feature-align {
-	margin-right: auto;
-	margin-left: auto;
+  margin: 0 auto;
 }
