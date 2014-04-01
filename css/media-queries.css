@@ -1,5 +1,5 @@
 /*                */
-/* NAVBAR > 767px */
+/* Screen > 767px */
 /*                */
 
 @media (min-width: 768px) {
@@ -32,12 +32,15 @@
   }
 }
 
-/*                */
-/* NAVBAR < 767px */
-/*                */
+/*                 */
+/*  Screen < 767px */
+/*                 */
 
 @media (max-width: 767px)  {
   .navbar-nav li a{
-    color: black !important;
+    color: #333 !important;
+  }
+  .col-sm-4>h2 {
+    text-align: center;
   }
 }
