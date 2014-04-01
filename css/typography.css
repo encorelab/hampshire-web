@@ -21,7 +21,7 @@ h2> a {
 }
 
 h1 a {
-  text-decoration: none !important;
+  text-decoration: none;
   color: #fff;
 }
 
