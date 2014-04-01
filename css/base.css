@@ -2,6 +2,7 @@
 	padding-top: 36;
 	padding-bottom: 70px;
 	background-image: url(../assets/header_image.jpg);
+  background-size: cover;
 }
 
 .jumbotron p {
