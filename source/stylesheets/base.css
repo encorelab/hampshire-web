@@ -21,3 +21,8 @@
     border: 0 none;
     box-shadow: none;
 }
+
+.img-circle {
+	display: block;
+	margin: 0 auto;
+}
