@@ -2,17 +2,14 @@
 # the following line to use "https"
 source 'http://rubygems.org'
 
-gem "middleman", "~>3.3.3"
-
-# Live-reloading plugin
+# Development ---------------------------------------------------------------
 gem "middleman-livereload", "~> 3.1.0"
-
-# For faster file watcher updates on Windows:
+gem "middleman", "~>3.3.3"
 gem "wdm", "~> 0.1.0", :platforms => [:mswin, :mingw]
+gem "bootstrap-sass"
+gem 'haml', '~> 4.0.5'
 
 # Windows does not come with time zone data
 gem "tzinfo-data", platforms: [:mswin, :mingw]
 
-gem "middleman-livereload", "~> 3.1.0"
 
-gem "bootstrap-sass"

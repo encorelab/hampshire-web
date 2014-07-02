@@ -1,0 +1,48 @@
+<!doctype html>
+%html.no-js{:lang => "en"}
+  %head
+    %meta{:charset => "utf-8"}/
+    %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}/
+    %title Pioneer Valley Citizen Science Collaboratory
+    %meta{:content => "", :name => "description"}/
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
+    
+    / Stylesheets
+    %link{:href => "stylesheets/normalize.css", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "http://fonts.googleapis.com/css?family=Roboto|Open+Sans|Metrophobic", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "stylesheets/base.css", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "stylesheets/typography.css", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "stylesheets/media-queries.css", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "stylesheets/hampshire.css", :rel => "stylesheet", :type => "text/css"}/
+    
+    / Javascript
+    %script{:src => "javascripts/vendor/jquery-2.1.0.min.js", :type => "text/javascript"}
+    %script{:src => "javascripts/hampshire.js", :type => "text/javascript"}
+    %script{:src => "http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js", :type => "text/javascript"}
+    %script{:src => "javascripts/active.js", :type => "text/javascript"}
+  %body
+    .jumbotron
+      .container
+        %h1
+          %a{:href => "index.html"} Pioneer Valley Citizen Science Collaboratory
+    .container
+      %nav.navbar.navbar-default{:role => "navigation"}
+        .container
+          .navbar-header
+            %button.navbar-toggle{"data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse", :type => "button"}
+              %span.sr-only Toggle navigation
+              %span.icon-bar
+              %span.icon-bar
+              %span.icon-bar
+          #bs-example-navbar-collapse-1.collapse.navbar-collapse
+            %ul.nav.navbar-nav
+              %li
+                %a{:href => "science-issues.html"} Science Issues
+              %li
+                %a{:href => "projects.html"} Projects
+              %li
+                %a{:href => "connected.html"} Get Connected
+              %li
+                %a{:href => "about.html"} About Us
+      = yield
