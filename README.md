@@ -16,7 +16,7 @@
 * haml
 * sass
 
-Setup
+#Setup
 * `git pull https://github.com/encorelab/hampshire-web.git`
 * `cd hampshire-web`
 * to start the middleman server type`middleman`
