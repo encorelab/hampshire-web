@@ -16,6 +16,7 @@
 * haml
 * sass
 * requires bunlder and ruby
+* For more about Middleman go to http://middlemanapp.com/
 
 #Setup
 * `git pull https://github.com/encorelab/hampshire-web.git`
