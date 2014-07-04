@@ -1,18 +1,14 @@
 @media (min-width: 768px) {
   
+  .jumbotron .container h1 {
+    margin-bottom: 50px;
+  }
+  
   .navbar {
     background: transparent;
     border: none;
     margin-top: -90px;
     min-height: 90px;
-  }
-
-  ul.nav.navbar-nav {
-		margin-left: -40px;
-	}
-
-  .jumbotron .container h1 {
-    margin-bottom: 50px;
   }
 
   .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover {
@@ -21,12 +17,14 @@
     border-radius: 35px;
   }
 
-  .navbar-nav li {
-    padding-right: 20px;
-  }
-
-  .navbar-nav li a {
-    display: inline-block;
+  .navbar-nav {
+    margin-left: -40px;
+    li {
+      padding-right: 20px;
+    }
+    a {
+      display: inline-block;  
+    }
   }
 
   .navbar-default .navbar-nav>li>a {
@@ -35,12 +33,11 @@
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
     border-radius: 35px;
-  }
-
-  .navbar-default .navbar-nav>li>a:hover {
-   background-color: #738C62;
-   opacity: 0.75;
-   border-radius: 35px;
+    &:hover {
+      background-color: #738C62;
+      opacity: 0.75;
+      border-radius: 35px;
+    }
   }
 }
 
@@ -52,9 +49,9 @@
     text-align: center;
   }
   .navbar-header {
-    background-color: #36404C;
+    background-color: rgba(28, 36, 49, 0.92);
     .navbar-toggle {
-      background-color: #36404C;
+      background-color: rgba(28, 36, 49, 0.92);
     }
   }
 }
