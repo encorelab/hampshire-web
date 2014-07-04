@@ -15,10 +15,13 @@
 * middleman
 * haml
 * sass
+* requires bunlder and ruby
+* For more about Middleman go to http://middlemanapp.com/
 
 #Setup
 * `git pull https://github.com/encorelab/hampshire-web.git`
 * `cd hampshire-web`
+* install all the gems for the project `bundle install`
 * to start the middleman server type`middleman`
 
 # Building/Compiling a project
