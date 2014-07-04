@@ -15,7 +15,8 @@
     = javascript_include_tag  "all"
     
   %body
-    = partial "layouts/shared/nav"
-    .container
-      = yield
+    .wrap
+      = partial "layouts/shared/nav"
+      .container
+        = yield
     = partial "layouts/shared/footer"

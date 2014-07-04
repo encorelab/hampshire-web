@@ -45,10 +45,16 @@
 }
 
 @media (max-width: 767px)  {
-  .navbar-nav li a{
-    color: #333 !important;
+  ul.nav.navbar-nav li a{
+    color: #36404C !important;
   }
   .col-sm-4>h2 {
     text-align: center;
+  }
+  .navbar-header {
+    background-color: #36404C;
+    .navbar-toggle {
+      background-color: #36404C;
+    }
   }
 }
