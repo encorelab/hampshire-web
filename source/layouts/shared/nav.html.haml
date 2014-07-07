@@ -14,10 +14,16 @@
       #bs-example-navbar-collapse-1.collapse.navbar-collapse
         %ul.nav.navbar-nav
           %li
-            %a{:href => "/science-issues"} Science Issues
+            %a{:href => "/"} Home
           %li
-            %a{:href => "/projects"} Projects
+            %a{:href => "/projects"} About PVCS
           %li
-            %a{:href => "/connected"} Get Connected
+            %a{:href => "/connected"} Projects
           %li
-            %a{:href => "/about"} About Us
+            %a{:href => "/about"} Sign Up/Log In
+        %form.navbar-form
+          .search.input-group.pull-right
+            %input{:type => 'text', :class => 'form-control', :placehoder => 'Search'}
+            .input-group-btn
+              %button.btn.btn-default
+                %span.glyphicon.glyphicon-search

@@ -39,6 +39,11 @@
       border-radius: 35px;
     }
   }
+  form.navbar-form {
+    .search.input-group.pull-right {
+      width: 30%;
+    }
+  }
 }
 
 @media (max-width: 767px)  {
