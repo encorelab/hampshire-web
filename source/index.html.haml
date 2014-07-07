@@ -1,7 +1,7 @@
-.row-fluid
+.row
 	.page-header
 		%h3 Welcome to the Pioneer Valley Citizen Science Collaboratory
-.row-fluid
+.row
 	.col-md-12
 		%h4 Frequently Asked Questions
 		%ul.faq.list-unstyled
@@ -18,21 +18,30 @@
 			%a{"data-target" => "#how-can-i-get-involved", "data-toggle" => "modal", :href => "#"}
 				%li How can I get involved?
 
-= partial "layouts/modals/modals-index-faq"
 
-.row-fluid
+.row
 	.page-header
 		%h3 Environmental Issues and Pioneer Valley
-.row-fluid
-	.col-md-4.col-md-offset-5
-		%h2 Sup
-.row-fluid
-	.col-md-3.col-md-offset-2
-		%h2 Sup
+.row
+	.col-md-3.col-md-offset-4
+		%a.thumbnail{"data-target" => "#climate-change-icon", "data-toggle" => "modal", :href => "#"}
+			%img.small-thumb{:alt => "Climate Change Icon", :src => "/images/climatechange-icon.png"}/
+.row
+	.col-md-3.col-md-offset-1
+		%a.thumbnail{"data-target" => "#invasive-icon", "data-toggle" => "modal", :href => "#"}
+			%img.small-thumb{:alt => "Invasive Species Icon", :src => "/images/invasivespecies-icon.png"}/
 	.col-md-3
-		%h2 Sup
+		%a.thumbnail{"data-target" => "#science-two-zero", "data-toggle" => "modal", :href => "#"}
+			%img.small-thumb{:alt => "Science 2.0", :src => "/images/science-2-0-icon.png"}/
 	.col-md-3
-		%h2 Sup
-.row-fluid
-	.col-md-4.col-md-offset-5
-		%h2 Sup
+		%a.thumbnail{"data-target" => "#habitat-loss-icon", "data-toggle" => "modal", :href => "#"}
+			%img.small-thumb{:alt => "Habitat Loss Icon", :src => "/images/habitatloss-icon.png"}/
+.row
+	.col-md-3.col-md-offset-4
+		%a.thumbnail{"data-target" => "#biodiversity-icon", "data-toggle" => "modal", :href => "#"}
+			%img.small-thumb{:alt => "Biodiversity Icon", :src => "/images/biodiversity-icon.png"}/		
+
+
+/ Modals --------------------------------------------------------------------
+= partial 'layouts/modals/modals-index-faq'
+= partial 'layouts/modals/modals-environmental-issues'
