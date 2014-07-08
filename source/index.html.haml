@@ -1,46 +1,48 @@
-.row
-	.page-header
-		%h3 Welcome to the Pioneer Valley Citizen Science Collaboratory
-.row
-	.col-md-12
-		%h4 Frequently Asked Questions
-		%ul.faq.list-unstyled
-			%a{"data-target" => "#what-is-pvcs", "data-toggle" => "modal", :href => "#"}
-				%li What is he Pioneer Valley Citizen Science Collaboratory?
-			%a{"data-target" => "#scienctists-work", "data-toggle" => "modal", :href => "#"}
-				%li Where do Scientists Work?
-			%a{"data-target" => "#science-community", "data-toggle" => "modal", :href => "#"}
-				%li How does science affect me and my community?
-			%a{"data-target" => "#involved-in-science", "data-toggle" => "modal", :href => "#"}
-				%li Who can be involved in scienctific research?
-			%a{"data-target" => "#what-is-citizen-science", "data-toggle" => "modal", :href => "#"}
-				%li What is citizen science?
-			%a{"data-target" => "#how-can-i-get-involved", "data-toggle" => "modal", :href => "#"}
-				%li How can I get involved?
+.container
+	.row
+		.page-header
+			%h3 Welcome to the Pioneer Valley Citizen Science Collaboratory
+	.row
+		.col-md-12
+			%h4 Frequently Asked Questions
+			%ul.faq.list-unstyled
+				%a{"data-target" => "#what-is-pvcs", "data-toggle" => "modal", :href => "#"}
+					%li What is he Pioneer Valley Citizen Science Collaboratory?
+				%a{"data-target" => "#scienctists-work", "data-toggle" => "modal", :href => "#"}
+					%li Where do Scientists Work?
+				%a{"data-target" => "#science-community", "data-toggle" => "modal", :href => "#"}
+					%li How does science affect me and my community?
+				%a{"data-target" => "#involved-in-science", "data-toggle" => "modal", :href => "#"}
+					%li Who can be involved in scienctific research?
+				%a{"data-target" => "#what-is-citizen-science", "data-toggle" => "modal", :href => "#"}
+					%li What is citizen science?
+				%a{"data-target" => "#how-can-i-get-involved", "data-toggle" => "modal", :href => "#"}
+					%li How can I get involved?
 
-.row
-	.page-header
-		%h3 Environmental Issues and Pioneer Valley
-.row
-	.col-md-3.col-md-offset-4
-		%a.thumbnail{"data-target" => "#climate-change-icon", "data-toggle" => "modal", :href => "#"}
-			%img.small-thumb{:alt => "Climate Change Icon", :src => "/images/climatechange-icon.png"}/
-.row
-	.col-md-3.col-md-offset-1
-		%a.thumbnail{"data-target" => "#invasive-icon", "data-toggle" => "modal", :href => "#"}
-			%img.small-thumb{:alt => "Invasive Species Icon", :src => "/images/invasivespecies-icon.png"}/
-	.col-md-3
-		%a.thumbnail{"data-target" => "#science-two-zero", "data-toggle" => "modal", :href => "#"}
-			%img.small-thumb{:alt => "Science 2.0", :src => "/images/science-2-0-icon.png"}/
-	.col-md-3
-		%a.thumbnail{"data-target" => "#habitat-loss-icon", "data-toggle" => "modal", :href => "#"}
-			%img.small-thumb{:alt => "Habitat Loss Icon", :src => "/images/habitatloss-icon.png"}/
-.row
-	.col-md-3.col-md-offset-4
-		%a.thumbnail{"data-target" => "#biodiversity-icon", "data-toggle" => "modal", :href => "#"}
-			%img.small-thumb{:alt => "Biodiversity Icon", :src => "/images/biodiversity-icon.png"}/		
+	.row
+		.page-header
+			%h3 Environmental Issues and Pioneer Valley
+	.row
+		.col-md-3.col-md-offset-4
+			%a.thumbnail{"data-target" => "#climate-change-icon", "data-toggle" => "modal", :href => "#"}
+				%img.small-thumb{:alt => "Climate Change Icon", :src => "/images/climatechange-icon.png"}/
+	.row
+		.col-md-3.col-md-offset-1
+			%a.thumbnail{"data-target" => "#invasive-icon", "data-toggle" => "modal", :href => "#"}
+				%img.small-thumb{:alt => "Invasive Species Icon", :src => "/images/invasivespecies-icon.png"}/
+		.col-md-3
+			%a.thumbnail{"data-target" => "#science-two-zero", "data-toggle" => "modal", :href => "#"}
+				%img.small-thumb{:alt => "Science 2.0", :src => "/images/science-2-0-icon.png"}/
+		.col-md-3
+			%a.thumbnail{"data-target" => "#habitat-loss-icon", "data-toggle" => "modal", :href => "#"}
+				%img.small-thumb{:alt => "Habitat Loss Icon", :src => "/images/habitatloss-icon.png"}/
+	.row
+		.col-md-3.col-md-offset-4
+			%a.thumbnail{"data-target" => "#biodiversity-icon", "data-toggle" => "modal", :href => "#"}
+				%img.small-thumb{:alt => "Biodiversity Icon", :src => "/images/biodiversity-icon.png"}/
 
 
-/ Modals --------------------------------------------------------------------
-= partial 'layouts/modals/modals-index-faq'
-= partial 'layouts/modals/modals-environmental-issues'
+
+	/ Modals --------------------------------------------------------------------
+	= partial 'layouts/modals/modals-index-faq'
+	= partial 'layouts/modals/modals-environmental-issues'
