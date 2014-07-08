@@ -1,10 +1,10 @@
 .container
 	.row
 		.page-header
-			%h3 Welcome to the Pioneer Valley Citizen Science Collaboratory
+			%h2 Welcome to the Pioneer Valley Citizen Science Collaboratory
 	.row
 		.col-md-12
-			%h4 Frequently Asked Questions
+			%h3 Frequently Asked Questions
 			%ul.faq.list-unstyled
 				%a{"data-target" => "#what-is-pvcs", "data-toggle" => "modal", :href => "#"}
 					%li What is he Pioneer Valley Citizen Science Collaboratory?
@@ -20,9 +20,8 @@
 					%li How can I get involved?
 	
 		.row
-			.page-header
+			.col-md-12
 				%h3 Environmental Issues and Pioneer Valley
-		.row
 			.col-md-3.col-md-offset-4
 				%a.thumbnail{"data-target" => "#climate-change-icon", "data-toggle" => "modal", :href => "#"}
 					%img.small-thumb{:alt => "Climate Change Icon", :src => "/images/climatechange-icon.png"}/
