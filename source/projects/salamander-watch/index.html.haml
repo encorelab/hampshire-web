@@ -1,37 +1,49 @@
-.row
-  .col-lg-12
-    .panel.panel-success
-      .panel-heading
-        %h3.panel-title Salamander Watch project background
-      .panel-body
-        %p Salamander Watch is a collaboration between Hampshire College and The Hitchcock Center for the Environment in Amherst, MA. This project involves both the “Big Night” (counting of spotted salamanders during the early spring mating migration) and the Egg Mass Count (which happens 3-4 weeks after the Big Night, and is used to get a better estimate of the breeding success and overall health of the population).
-.row
-  .col-lg-12.top-buffer
-    .panel.panel-success
-      .panel-heading
-        %h3.panel-title Spotted Salamander Basics
-      .panel-body
-        .col-md-8
-          %p
-            Adult spotted salamanders are 15-25 cm in total length, and females tend to be larger than males. Compared to other salamanders, the body is stout with a broadly rounded snout. The sides of the head are often swollen at the back of the jaw. The legs are large and strong with four to five toes. (Petranka, 1998) When they leave their ponds, spotted salamanders are black, dark brown, or dark grey on their backs...
-            %a{:href => "http://en.wikipedia.org/wiki/Spotted_salamander"} read more
-        .col-md-4
-          %a.thumbnail
-            %img.img-rounded.img-responsive{:alt => "A spotted salamander", :src => "/images/spotted-basics.png"}/
-.row
-  .col-lg-12.col-md-12.col-sm-12
-    %h3 Environmental issues affecting the spotted salamander
-  .col-lg-3.col-md-3.col-sm-3
-    %a.thumbnail{"data-target" => "#climateChange", "data-toggle" => "modal", :href => "#"}
-      %img{:alt => "Climate Change Icon", :src => "/images/climatechange-icon.png"}/
-  .col-lg-3.col-md-3.col-sm-3
-    %a.thumbnail{"data-target" => "#habitat-loss", "data-toggle" => "modal", :href => "#"}
-      %img{:alt => "Habitat Loss Icon", :src => "/images/habitatloss-icon.png"}/
-  .col-lg-3.col-md-3.col-sm-3
-    %a.thumbnail{"data-target" => "#biodiversity", "data-toggle" => "modal", :href => "#"}
-      %img{:alt => "Biodiversity Icon", :src => "/images/biodiversity-icon.png"}/
-  .col-lg-3.col-md-3.col-sm-3
-    %a.thumbnail{"data-target" => "#invaisive", "data-toggle" => "modal", :href => "#"}
-      %img{:alt => "Invasive Species Icon", :src => "/images/invasivespecies-icon.png"}/
+.container
+  .row
+    .col-lg-12
+      .panel.panel-success
+        .panel-heading
+          %h3.panel-title Salamander Watch project background
+        .panel-body
+          %p Salamander Watch is a collaboration between Hampshire College and The Hitchcock Center for the Environment in Amherst, MA. This project involves both the “Big Night” (counting of spotted salamanders during the early spring mating migration) and the Egg Mass Count (which happens 3-4 weeks after the Big Night, and is used to get a better estimate of the breeding success and overall health of the population).
+  .row
+    .col-lg-12.top-buffer
+      .panel.panel-success
+        .panel-heading
+          %h3.panel-title Spotted Salamander Basics
+        .panel-body
+          .col-md-8
+            %p
+              Adult spotted salamanders are 15-25 cm in total length, and females tend to be larger than males. Compared to other salamanders, the body is stout with a broadly rounded snout. The sides of the head are often swollen at the back of the jaw. The legs are large and strong with four to five toes. (Petranka, 1998) When they leave their ponds, spotted salamanders are black, dark brown, or dark grey on their backs...
+              %a{:href => "http://en.wikipedia.org/wiki/Spotted_salamander"} read more
+          .col-md-4
+            %a.thumbnail
+              %img.img-rounded.img-responsive{:alt => "A spotted salamander", :src => "/images/spotted-basics.png"}/
+  .row
+    .col-lg-12.col-md-12.col-sm-12
+      %h3 Environmental issues affecting the spotted salamander
+    .col-lg-3.col-md-3.col-sm-3
+      %a.thumbnail{"data-target" => "#climateChange", "data-toggle" => "modal", :href => "#"}
+        %img.small-thumb{:alt => "Climate Change Icon", :src => "/images/climatechange-icon.png"}/
+    .col-lg-3.col-md-3.col-sm-3
+      %a.thumbnail{"data-target" => "#habitat-loss", "data-toggle" => "modal", :href => "#"}
+        %img.small-thumb{:alt => "Habitat Loss Icon", :src => "/images/habitatloss-icon.png"}/
+    .col-lg-3.col-md-3.col-sm-3
+      %a.thumbnail{"data-target" => "#biodiversity", "data-toggle" => "modal", :href => "#"}
+        %img.small-thumb{:alt => "Biodiversity Icon", :src => "/images/biodiversity-icon.png"}/
+    .col-lg-3.col-md-3.col-sm-3
+      %a.thumbnail{"data-target" => "#invaisive", "data-toggle" => "modal", :href => "#"}
+        %img.small-thumb{:alt => "Invasive Species Icon", :src => "/images/invasivespecies-icon.png"}/
 
-= partial "layouts/modals/modals-salamander"
+  .row
+    .col-sm-4
+      .thumbnail
+        %img.small-thumb{:src => "/images/register-for-excursion.png", :alt => "Launch an Investigation"}/
+    .col-sm-4
+      .thumbnail
+        %img.small-thumb{:src => "/images/launch-invest.png", :alt => "Launch an Investigation"}/    
+    .col-sm-4
+      .thumbnail
+        %img.small-thumb{:src => "/images/explore-data.png", :alt => "Explore the Data Set"}/
+
+  = partial "layouts/modals/modals-salamander"
