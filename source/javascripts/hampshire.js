@@ -5,7 +5,7 @@
 
   app.init = function() {
     // this function is execute on start and can call other function
-    // usually a lot of the hooks are places here again
+    // usually a lot of the hooks are places here
     console.log('this is where it all starts');
 
     setupClickListeners();
