@@ -1,20 +1,5 @@
 .container
 	.row
-		.col-md-12
-			%ul.faq.list-unstyled
-				%a{"data-target" => "#what-is-pvcs", "data-toggle" => "modal", :href => "#"}
-					%li What is he Pioneer Valley Citizen Science Collaboratory?
-				%a{"data-target" => "#scientists-work", "data-toggle" => "modal", :href => "#"}
-					%li Where do Scientists Work?
-				%a{"data-target" => "#science-community", "data-toggle" => "modal", :href => "#"}
-					%li How does science affect me and my community?
-				%a{"data-target" => "#involved-in-science", "data-toggle" => "modal", :href => "#"}
-					%li Who can be involved in scienctific research?
-				%a{"data-target" => "#what-is-citizen-science", "data-toggle" => "modal", :href => "#"}
-					%li What is citizen science?
-				%a{"data-target" => "#how-can-i-get-involved", "data-toggle" => "modal", :href => "#"}
-					%li How can I get involved?
-	
 		.section.hidden-xs
 			.row
 				.col-sm-12
@@ -74,5 +59,4 @@
 						%img.small-mobile{:alt => "Biodiversity Icon", :src => "/images/biodiversity-icon.png"}/ 
 
 	/ Modals --------------------------------------------------------------------
-	= partial 'layouts/modals/modals-index-faq'
 	= partial 'layouts/modals/modals-environmental-issues'
