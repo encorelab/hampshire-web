@@ -1,14 +1,13 @@
 .container
 	.row
-		%ul
-			%li.col-xs-12.col-sm-6
-				%h2.users New Users
-				%button.btn.btn-info.btn-lg Join PVCS
-			%li.col-xs-12.col-sm-6
-				%h2.users Existing Users
-				%input{:type => "email"}
-					%input{:type => "password"}
-					%button.btn.btn-info.btn-lg Sign In
+		.col-xs-12.col-sm-6
+			%h2.users New Users
+			%button.btn.btn-link.btn-lg Join PVCS
+		.col-xs-12.col-sm-6
+			%h2.users Existing Users
+			%input{:type => "email"}
+				%input{:type => "password"}
+					%button.btn.btn-link.btn-lg Sign In
 
 
 
