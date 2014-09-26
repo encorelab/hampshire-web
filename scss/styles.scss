@@ -1,3 +1,38 @@
+@import 'variables';
+
+// ********** typography **********
+body {
+	font-family: $font-family--primary;
+	font-weight: $font-weight--light;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+h1 > a,
+.nav-pills > li > a,
+#environment h2,
+#environment h3,
+#about h2,
+#about h4,
+#about p {
+	color: $white;
+	font-weight: $font-weight--light;
+}
+
+h2 {
+	margin: 50px 0;
+	font-size: 3em;
+	font-weight: $font-weight--light;
+}
+
+.btn {
+	@include button(dodgerblue);
+	padding: 10px 25px;
+}
+
+// ********** background images **********
 .jumbotron {
 	background: url('../images/background_home.jpg') no-repeat;
 	background-size: cover;
@@ -11,4 +46,51 @@
 #about {
 	background: url('../images/background_about.jpg') no-repeat;
 	background-size: cover;
+}
+
+// *************** SECTIONS ***************
+// ********** header **********
+h1 {
+	padding: 17% 0 2%;
+	&> a:hover {
+		color: $white;
+	}
+}
+
+.nav-pills > li {
+	margin-right: 20px;
+	padding-bottom: 15%;
+	&> a {
+		@include button($white);
+		background: none;
+		&:hover {
+			color: $black;
+		}
+	}
+}
+
+.jumbotron {
+	margin-bottom: 0;
+}
+
+// ********** sign up/in **********
+#login {
+	padding: 50px 0;
+	.col-sm-5 {
+		padding-right: 75px;
+	}
+	.col-sm-5:nth-child(2) {
+		border-left: 1px solid $black;
+		padding-left: 75px;
+	}
+	input {
+		width: 75%;
+	}
+}
+
+
+// ********** environmental issues **********
+.thumbnail {
+	background-color: rgba(0, 0, 0, 0);
+	border: none;
 }
