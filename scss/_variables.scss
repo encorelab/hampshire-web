@@ -1,0 +1,28 @@
+// ********** colours **********
+$white					: #fff;
+$black					: #0b0b0b;
+$dodgerblue				: #2998db;
+
+// ********** typography **********
+$font-url--google		: 'http://fonts.googleapis.com/css?family=Open+Sans:300,400,700';
+$font-family--primary	: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+$font-weight--light		: 300;
+$font-weight--medium	: 400;
+$font-weight--bold		: 700;
+
+@mixin button($color) {
+	font-size: 1.2em;
+	background-color: $color;
+	border: 2px solid $color;
+	border-radius: 4px;
+	padding: 10px 25px;
+	background-image: none;
+	box-shadow: none;
+	&:hover {
+		cursor: pointer;
+		background-color: $white;
+		color: $color;
+		border-color: $color;
+	}
+}
