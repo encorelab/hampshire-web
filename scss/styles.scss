@@ -15,8 +15,9 @@ h1 > a,
 #environment h2,
 #environment h3,
 #about h2,
-#about h4,
-#about p {
+#about p,
+.panel-title > a,
+.panel-body {
 	color: $white;
 	font-weight: $font-weight--light;
 }
@@ -24,6 +25,11 @@ h1 > a,
 h2 {
 	margin: 50px 0;
 	font-size: 3em;
+	font-weight: $font-weight--light;
+}
+
+h3 {
+	font-size: 2em;
 	font-weight: $font-weight--light;
 }
 
@@ -127,9 +133,51 @@ h1 {
 // ********** projects **********
 #projects {
 	h3 {
-		font-size: 2em;
-		font-weight: $font-weight--light;
+		margin-bottom: 20px;
+	}
+	p,
+	 {
+		margin-bottom: 20px;
+	}
+	.row {
+		margin-bottom: 50px;
 	}
 }
 
 // ********** about **********
+#about,
+#about-team {
+	.panel,
+	.panel-group,
+	.panel-default,
+	.panel-heading,
+	.panel-body {
+		background: none;
+		border: none;
+		cursor: pointer;
+		box-shadow: none;
+	}
+	.panel {
+		margin-bottom: 20px;
+	}
+	h3 {
+		font-size: 1.5em;
+	}
+	.panel-body {
+		font-size: 1.2em;
+		padding-left: 50px;
+	}
+	.join-now {
+		@include button($white);
+		background: none;
+		font-size: 17px;
+		color: $white;
+		&:hover {
+			color: $black;
+		}
+	}
+}
+
+#about-team {
+	background: #382d5d;
+}

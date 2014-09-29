@@ -12,8 +12,9 @@ h1 > a,
 #environment h2,
 #environment h3,
 #about h2,
-#about h4,
-#about p {
+#about p,
+.panel-title > a,
+.panel-body {
   color: white;
   font-weight: 300;
 }
@@ -21,6 +22,11 @@ h1 > a,
 h2 {
   margin: 50px 0;
   font-size: 3em;
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 2em;
   font-weight: 300;
 }
 
@@ -137,6 +143,68 @@ h1 > a:hover {
 }
 
 #projects h3 {
-  font-size: 2em;
-  font-weight: 300;
+  margin-bottom: 20px;
+}
+#projects p {
+  margin-bottom: 20px;
+}
+#projects .row {
+  margin-bottom: 50px;
+}
+
+#about .panel,
+#about .panel-group,
+#about .panel-default,
+#about .panel-heading,
+#about .panel-body,
+#about-team .panel,
+#about-team .panel-group,
+#about-team .panel-default,
+#about-team .panel-heading,
+#about-team .panel-body {
+  background: none;
+  border: none;
+  cursor: pointer;
+  box-shadow: none;
+}
+#about .panel,
+#about-team .panel {
+  margin-bottom: 20px;
+}
+#about h3,
+#about-team h3 {
+  font-size: 1.5em;
+}
+#about .panel-body,
+#about-team .panel-body {
+  font-size: 1.2em;
+  padding-left: 50px;
+}
+#about .join-now,
+#about-team .join-now {
+  font-size: 1.2em;
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 4px;
+  padding: 10px 25px;
+  background-image: none;
+  box-shadow: none;
+  background: none;
+  font-size: 17px;
+  color: white;
+}
+#about .join-now:hover,
+#about-team .join-now:hover {
+  cursor: pointer;
+  background-color: white;
+  color: white;
+  border-color: white;
+}
+#about .join-now:hover,
+#about-team .join-now:hover {
+  color: #0b0b0b;
+}
+
+#about-team {
+  background: #382d5d;
 }

@@ -12,3 +12,7 @@ $(function() {
     }
   });
 });
+
+// $(function () {
+//   $('.collapse').collapse();
+// });
