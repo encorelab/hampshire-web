@@ -41,6 +41,16 @@ h2 {
   border-color: dodgerblue;
 }
 
+.thumbnail {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  box-shadow: none;
+}
+
+.container-fluid {
+  padding: 0 50px;
+}
+
 .jumbotron {
   background: url("../images/background_home.jpg") no-repeat;
   background-size: cover;
@@ -105,7 +115,28 @@ h1 > a:hover {
   width: 75%;
 }
 
-.thumbnail {
-  background-color: rgba(0, 0, 0, 0);
-  border: none;
+#environment {
+  padding: 75px 50px;
+}
+#environment img {
+  width: 75%;
+  margin: 0 auto;
+}
+#environment h3 {
+  font-size: 1.3em;
+  padding: 0;
+  margin-top: 70px;
+}
+#environment .col-sm-2 {
+  padding: 0;
+}
+#environment .row {
+  padding-top: 100px;
+  background: url("../images/lines_white.png") 50% 42% no-repeat;
+  background-size: 55%;
+}
+
+#projects h3 {
+  font-size: 2em;
+  font-weight: 300;
 }

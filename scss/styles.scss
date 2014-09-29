@@ -32,6 +32,16 @@ h2 {
 	padding: 10px 25px;
 }
 
+.thumbnail {
+	background-color: rgba(0, 0, 0, 0);
+	border: none;
+	box-shadow: none;
+}
+
+.container-fluid {
+	padding: 0 50px;
+}
+
 // ********** background images **********
 .jumbotron {
 	background: url('../images/background_home.jpg') no-repeat;
@@ -90,7 +100,36 @@ h1 {
 
 
 // ********** environmental issues **********
-.thumbnail {
-	background-color: rgba(0, 0, 0, 0);
-	border: none;
+#environment {
+	padding: 75px 50px;
+	img {
+		width: 75%;
+		margin: 0 auto;
+	}
+	h3 {
+		font-size: 1.3em;
+		padding: 0;
+		margin-top: 70px;
+	}
+	.col-sm-2 {
+		padding: 0;
+	}
+	.row {
+		padding-top: 100px;
+		background: url('../images/lines_white.png') 50% 42% no-repeat;
+		background-size: 55%;
+	}
 }
+
+// ********** modals **********
+// need to make modals link to other modals
+
+// ********** projects **********
+#projects {
+	h3 {
+		font-size: 2em;
+		font-weight: $font-weight--light;
+	}
+}
+
+// ********** about **********
