@@ -6,6 +6,12 @@
   transition: all 0.4s ease-in-out;
 }
 
+/********** MEDIA QUERIES **********/
+/* Extra small devices landscape (phones, less than 768px) */
+/* Small devices portrait (tablets, 768px and up) */
+/* Small devices landscape(tablets, 768px and up) */
+/* Medium devices (desktops, 992px and up) */
+/* Large devices (large desktops, 1200px and up) */
 body {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
