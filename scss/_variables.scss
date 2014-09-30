@@ -2,6 +2,7 @@
 $white					: #fff;
 $black					: #0b0b0b;
 $dodgerblue				: #2998db;
+$darkslategray			: #382d5d;
 
 // ********** typography **********
 $font-url--google		: 'http://fonts.googleapis.com/css?family=Open+Sans:300,400,700';
@@ -11,6 +12,10 @@ $font-weight--light		: 300;
 $font-weight--medium	: 400;
 $font-weight--bold		: 700;
 
+%transition	{
+	transition: all 0.4s ease-in-out;
+}
+
 @mixin button($color) {
 	font-size: 1.2em;
 	background-color: $color;
@@ -19,10 +24,12 @@ $font-weight--bold		: 700;
 	padding: 10px 25px;
 	background-image: none;
 	box-shadow: none;
+	@extend %transition;
 	&:hover {
 		cursor: pointer;
 		background-color: $white;
 		color: $color;
 		border-color: $color;
+		@extend %transition;
 	}
 }

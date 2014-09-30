@@ -1,3 +1,11 @@
+.btn, .btn:hover, .nav-pills > li > a, .nav-pills > li > a:hover, #about .join-now,
+#about-team .join-now, #about .join-now:hover,
+#about-team .join-now:hover, #about-team p > a,
+#about-team h4 > a, #about-team p > a:hover,
+#about-team h4 > a:hover {
+  transition: all 0.4s ease-in-out;
+}
+
 body {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
@@ -28,6 +36,13 @@ h2 {
 h3 {
   font-size: 2em;
   font-weight: 300;
+}
+
+a.thumbnail:hover,
+a.thumbnail:focus,
+a.thumbnail.active {
+  border: none;
+  color: rgba(0, 0, 0, 0);
 }
 
 .btn {
@@ -192,6 +207,7 @@ h1 > a:hover {
   background: none;
   font-size: 17px;
   color: white;
+  margin-left: 50px;
 }
 #about .join-now:hover,
 #about-team .join-now:hover {
@@ -207,4 +223,19 @@ h1 > a:hover {
 
 #about-team {
   background: #382d5d;
+}
+#about-team .panel {
+  margin-top: 20px;
+}
+#about-team h4 {
+  font-size: 1.3em;
+  margin-bottom: 15px;
+}
+#about-team p > a,
+#about-team h4 > a {
+  color: #b9b0d9;
+}
+#about-team p > a:hover,
+#about-team h4 > a:hover {
+  color: white;
 }
