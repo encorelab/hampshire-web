@@ -1,14 +1,9 @@
 @import 'variables';
-@import 'media-queries';
 
 // ********** typography **********
 body {
 	font-family: $font-family--primary;
 	font-weight: $font-weight--light;
-}
-
-a:hover {
-	text-decoration: none;
 }
 
 h1 > a,
@@ -24,7 +19,7 @@ h1 > a,
 }
 
 h2 {
-	margin: 50px 0;
+	margin: 25px 0;
 	font-size: 3em;
 	font-weight: $font-weight--light;
 }
@@ -34,8 +29,8 @@ h3 {
 	font-weight: $font-weight--light;
 }
 
-a {
-
+a:hover {
+	text-decoration: none;
 }
 
 a.thumbnail:hover,
@@ -57,7 +52,7 @@ a.thumbnail.active {
 }
 
 .container-fluid {
-	padding: 0 50px;
+	padding: 25px;
 }
 
 // ********** background images **********
@@ -85,14 +80,21 @@ h1 {
 	}
 }
 
-.nav-pills > li {
-	margin-right: 20px;
+.container {
 	padding-bottom: 15%;
-	&> a {
-		@include button($white);
-		background: none;
-		&:hover {
-			color: $black;
+}
+
+.nav-pills {
+	&> li,
+	&> li + li {
+		float: none;
+		&> a {
+			@include button($white);
+			background: none;
+			text-align: center;
+			&:hover {
+				color: $black;
+			}
 		}
 	}
 }
@@ -103,17 +105,17 @@ h1 {
 
 // ********** sign up/in **********
 #login {
-	padding: 50px 0;
-	.col-sm-5 {
-		padding-right: 75px;
-	}
-	.col-sm-5:nth-child(2) {
-		border-left: 1px solid $black;
-		padding-left: 75px;
-	}
-	input {
-		width: 75%;
-	}
+	// padding: 50px 0;
+	// .col-sm-5 {
+	// 	padding-right: 75px;
+	// }
+	// .col-sm-5:nth-child(2) {
+	// 	border-left: 1px solid $black;
+	// 	padding-left: 75px;
+	// }
+	// input {
+	// 	width: 75%;
+	// }
 }
 
 
@@ -140,7 +142,7 @@ h1 {
 }
 
 // ********** modals **********
-// need to make modals link to other modals
+// TODO need to make modals link to other modals
 
 // ********** projects **********
 #projects {
@@ -209,4 +211,78 @@ h1 {
 			@extend %transition;
 		}
 	}
+}
+
+/********** MEDIA QUERIES **********/
+/* Extra small devices landscape (phones, less than 768px) */
+@media all and (max-width: 767px) and (orientation: landscape) {
+	h1 {
+		padding-top: 5%;
+	}
+	.container {
+		padding-bottom: 5%;
+	}
+	.nav-pills {
+		padding: 0 15%;
+	}
+}
+
+/* Small devices portrait (tablets, 768px and up) */
+@media all and (min-width: 768px) /*and (orientation: portrait)*/ {
+	h2 {
+		margin: 50px 0;
+	}
+	.container-fluid {
+		padding: 0 50px;
+	}
+	.nav-pills {
+		padding: 0 15%;
+	}
+	#login {
+	    padding: 50px 0;
+	    .col-sm-6:first-child {
+	        padding-right: 75px;
+	        h2.users {
+	            text-align: right;
+	        }
+	        button {
+	            float: right;
+	        }
+	    }
+	    .col-sm-6:nth-child(2) {
+	        border-left: 1px solid $black;
+	        padding-left: 75px;
+	    }
+	    input {
+	        width: 75%;
+	    }
+	}
+
+}
+
+/* Small devices landscape(tablets, 768px and up) */
+@media all and (min-width: 768px) and (orientation: landscape) {
+
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media all and (min-width: 992px) {
+
+    .nav-pills {
+        padding: 0;
+        &> li,
+        &> li + li {
+            margin-right: 20px;
+            display: inline-block;
+        }
+    }
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media all and (min-width: 1200px) {
+
+
+
 }
