@@ -59,6 +59,7 @@ a.thumbnail.active {
 .jumbotron {
 	background: url('../images/background_home.jpg') no-repeat;
 	background-size: cover;
+	padding: 25px;
 }
 
 #environment {
@@ -81,13 +82,14 @@ h1 {
 }
 
 .container {
-	padding-bottom: 15%;
+	padding: 0 0 15%;
 }
 
 .nav-pills {
 	&> li,
 	&> li + li {
 		float: none;
+		margin: 0 20px;
 		&> a {
 			@include button($white);
 			background: none;
@@ -105,39 +107,25 @@ h1 {
 
 // ********** sign up/in **********
 #login {
-	// padding: 50px 0;
-	// .col-sm-5 {
-	// 	padding-right: 75px;
-	// }
-	// .col-sm-5:nth-child(2) {
-	// 	border-left: 1px solid $black;
-	// 	padding-left: 75px;
-	// }
-	// input {
-	// 	width: 75%;
-	// }
+
 }
 
 
 // ********** environmental issues **********
 #environment {
-	padding: 75px 50px;
 	img {
-		width: 75%;
 		margin: 0 auto;
 	}
 	h3 {
 		font-size: 1.3em;
 		padding: 0;
-		margin-top: 70px;
+		margin-top: 25px;
 	}
 	.col-sm-2 {
 		padding: 0;
 	}
 	.row {
-		padding-top: 100px;
-		background: url('../images/lines_white.png') 50% 42% no-repeat;
-		background-size: 55%;
+		padding-top: 25px;
 	}
 }
 
@@ -146,15 +134,10 @@ h1 {
 
 // ********** projects **********
 #projects {
-	h3 {
-		margin-bottom: 20px;
-	}
+	h3,
 	p,
-	 {
+	a {
 		margin-bottom: 20px;
-	}
-	.row {
-		margin-bottom: 50px;
 	}
 }
 
@@ -174,12 +157,19 @@ h1 {
 	.panel {
 		margin-bottom: 20px;
 	}
+	.panel-heading {
+		padding: 0;
+	}
 	h3 {
 		font-size: 1.5em;
+		span {
+			content: url('../images/caret.svg');
+			margin-right: 15px;
+		}
 	}
 	.panel-body {
 		font-size: 1.2em;
-		padding-left: 50px;
+		padding-left: 30px;
 	}
 	.join-now {
 		@include button($white);
@@ -198,9 +188,19 @@ h1 {
 	.panel {
 		margin-top: 20px;
 	}
+	.panel-body {
+		padding: 0;
+	}
 	h4 {
 		font-size: 1.3em;
 		margin-bottom: 15px;
+	}
+	img {
+		max-width: 75%;
+		margin-top: 20px;
+	}
+	.col-md-12:last-child {
+		padding: 0;
 	}
 	p > a,
 	h4 > a {
@@ -225,6 +225,14 @@ h1 {
 	.nav-pills {
 		padding: 0 15%;
 	}
+	#login {
+		form {
+			padding: 0 20%;
+			input {
+				width: 300px;
+			}
+		}
+	}
 }
 
 /* Small devices portrait (tablets, 768px and up) */
@@ -239,25 +247,68 @@ h1 {
 		padding: 0 15%;
 	}
 	#login {
-	    padding: 50px 0;
-	    .col-sm-6:first-child {
-	        padding-right: 75px;
-	        h2.users {
-	            text-align: right;
-	        }
-	        button {
-	            float: right;
-	        }
-	    }
-	    .col-sm-6:nth-child(2) {
-	        border-left: 1px solid $black;
-	        padding-left: 75px;
-	    }
-	    input {
-	        width: 75%;
-	    }
+		padding: 50px 0;
+		.col-sm-6:first-child {
+			padding-right: 75px;
+			h2.users {
+				text-align: right;
+			}
+			button {
+				float: right;
+			}
+		}
+		.col-sm-6:nth-child(2) {
+			border-left: 1px solid $black;
+			padding-left: 75px;
+		}
+		input {
+			width: 300px;
+		}
 	}
-
+	#environment {
+		padding: 75px 50px;
+		img {
+			width: 75%;
+		}
+		h3 {
+			margin-top: 70px;
+		}
+		.row {
+			padding-top: 100px;
+			background: url('../images/lines_white.png') 50% 42% no-repeat;
+			background-size: 55%;
+		}
+	}
+	#projects {
+		a {
+			margin-bottom: 0;
+		}
+		.row {
+			margin-bottom: 50px;
+		}
+	}
+	#about,
+	#about-team {
+		.panel-heading {
+			padding: 10px 15px;
+		}
+		.panel-body {
+			font-size: 1.2em;
+			padding-left: 50px;
+		}
+		h3 {
+			span {
+				margin-right: 25px;
+			}
+		}
+		img {
+			max-width: 100%;
+			margin-top: 0;
+		}
+		.col-md-12:last-child {
+			padding: 0 15px;
+		}
+	}
 }
 
 /* Small devices landscape(tablets, 768px and up) */
@@ -269,14 +320,14 @@ h1 {
 /* Medium devices (desktops, 992px and up) */
 @media all and (min-width: 992px) {
 
-    .nav-pills {
-        padding: 0;
-        &> li,
-        &> li + li {
-            margin-right: 20px;
-            display: inline-block;
-        }
-    }
+	.nav-pills {
+		padding: 0;
+		&> li,
+		&> li + li {
+			margin: 0 20px 0 0;
+			display: inline-block;
+		}
+	}
 
 }
 

@@ -75,6 +75,7 @@ a.thumbnail.active {
 .jumbotron {
   background: url("../images/background_home.jpg") no-repeat;
   background-size: cover;
+  padding: 25px;
 }
 
 #environment {
@@ -95,11 +96,12 @@ h1 > a:hover {
 }
 
 .container {
-  padding-bottom: 15%;
+  padding: 0 0 15%;
 }
 
 .nav-pills > li, .nav-pills > li + li {
   float: none;
+  margin: 0 20px;
 }
 .nav-pills > li > a, .nav-pills > li + li > a {
   font-size: 1.2em;
@@ -126,35 +128,25 @@ h1 > a:hover {
   margin-bottom: 0;
 }
 
-#environment {
-  padding: 75px 50px;
-}
 #environment img {
-  width: 75%;
   margin: 0 auto;
 }
 #environment h3 {
   font-size: 1.3em;
   padding: 0;
-  margin-top: 70px;
+  margin-top: 25px;
 }
 #environment .col-sm-2 {
   padding: 0;
 }
 #environment .row {
-  padding-top: 100px;
-  background: url("../images/lines_white.png") 50% 42% no-repeat;
-  background-size: 55%;
+  padding-top: 25px;
 }
 
-#projects h3 {
+#projects h3,
+#projects p,
+#projects a {
   margin-bottom: 20px;
-}
-#projects p {
-  margin-bottom: 20px;
-}
-#projects .row {
-  margin-bottom: 50px;
 }
 
 #about .panel,
@@ -176,14 +168,23 @@ h1 > a:hover {
 #about-team .panel {
   margin-bottom: 20px;
 }
+#about .panel-heading,
+#about-team .panel-heading {
+  padding: 0;
+}
 #about h3,
 #about-team h3 {
   font-size: 1.5em;
 }
+#about h3 span,
+#about-team h3 span {
+  content: url("../images/caret.svg");
+  margin-right: 15px;
+}
 #about .panel-body,
 #about-team .panel-body {
   font-size: 1.2em;
-  padding-left: 50px;
+  padding-left: 30px;
 }
 #about .join-now,
 #about-team .join-now {
@@ -217,9 +218,19 @@ h1 > a:hover {
 #about-team .panel {
   margin-top: 20px;
 }
+#about-team .panel-body {
+  padding: 0;
+}
 #about-team h4 {
   font-size: 1.3em;
   margin-bottom: 15px;
+}
+#about-team img {
+  max-width: 75%;
+  margin-top: 20px;
+}
+#about-team .col-md-12:last-child {
+  padding: 0;
 }
 #about-team p > a,
 #about-team h4 > a {
@@ -243,6 +254,13 @@ h1 > a:hover {
 
   .nav-pills {
     padding: 0 15%;
+  }
+
+  #login form {
+    padding: 0 20%;
+  }
+  #login form input {
+    width: 300px;
   }
 }
 /* Small devices portrait (tablets, 768px and up) */
@@ -276,7 +294,52 @@ h1 > a:hover {
     padding-left: 75px;
   }
   #login input {
+    width: 300px;
+  }
+
+  #environment {
+    padding: 75px 50px;
+  }
+  #environment img {
     width: 75%;
+  }
+  #environment h3 {
+    margin-top: 70px;
+  }
+  #environment .row {
+    padding-top: 100px;
+    background: url("../images/lines_white.png") 50% 42% no-repeat;
+    background-size: 55%;
+  }
+
+  #projects a {
+    margin-bottom: 0;
+  }
+  #projects .row {
+    margin-bottom: 50px;
+  }
+
+  #about .panel-heading,
+  #about-team .panel-heading {
+    padding: 10px 15px;
+  }
+  #about .panel-body,
+  #about-team .panel-body {
+    font-size: 1.2em;
+    padding-left: 50px;
+  }
+  #about h3 span,
+  #about-team h3 span {
+    margin-right: 25px;
+  }
+  #about img,
+  #about-team img {
+    max-width: 100%;
+    margin-top: 0;
+  }
+  #about .col-md-12:last-child,
+  #about-team .col-md-12:last-child {
+    padding: 0 15px;
   }
 }
 /* Small devices landscape(tablets, 768px and up) */
@@ -286,7 +349,7 @@ h1 > a:hover {
     padding: 0;
   }
   .nav-pills > li, .nav-pills > li + li {
-    margin-right: 20px;
+    margin: 0 20px 0 0;
     display: inline-block;
   }
 }
