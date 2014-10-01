@@ -34,6 +34,11 @@ h3 {
   font-weight: 300;
 }
 
+p {
+  font-size: 1.1em;
+  line-height: 1.6em;
+}
+
 a:hover {
   text-decoration: none;
 }
@@ -85,7 +90,8 @@ a.thumbnail.active {
 
 #about {
   background: url("../images/background_about.jpg") no-repeat;
-  background-size: cover;
+  background-size: 150%;
+  background-position: 25% 50%;
 }
 
 h1 {
@@ -306,6 +312,12 @@ h1 > a:hover {
   #environment h3 {
     margin-top: 70px;
   }
+  #environment .col-sm-2 {
+    margin-left: 0;
+  }
+  #environment .col-sm-2:first-child {
+    margin-left: 16.66666667%;
+  }
   #environment .row {
     padding-top: 100px;
     background: url("../images/lines_white.png") 50% 42% no-repeat;
@@ -326,7 +338,7 @@ h1 > a:hover {
   #about .panel-body,
   #about-team .panel-body {
     font-size: 1.2em;
-    padding-left: 50px;
+    padding-left: 55px;
   }
   #about h3 span,
   #about-team h3 span {

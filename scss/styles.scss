@@ -29,6 +29,11 @@ h3 {
 	font-weight: $font-weight--light;
 }
 
+p {
+	font-size: 1.1em;
+	line-height: 1.6em;
+}
+
 a:hover {
 	text-decoration: none;
 }
@@ -69,7 +74,8 @@ a.thumbnail.active {
 
 #about {
 	background: url('../images/background_about.jpg') no-repeat;
-	background-size: cover;
+	background-size: 150%;
+	background-position: 25% 50%;
 }
 
 // *************** SECTIONS ***************
@@ -273,6 +279,12 @@ h1 {
 		h3 {
 			margin-top: 70px;
 		}
+		.col-sm-2 {
+			margin-left: 0;
+			&:first-child {
+				margin-left: 16.66666667%;
+			}
+		}
 		.row {
 			padding-top: 100px;
 			background: url('../images/lines_white.png') 50% 42% no-repeat;
@@ -294,7 +306,7 @@ h1 {
 		}
 		.panel-body {
 			font-size: 1.2em;
-			padding-left: 50px;
+			padding-left: 55px;
 		}
 		h3 {
 			span {
