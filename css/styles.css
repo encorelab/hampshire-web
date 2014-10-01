@@ -233,7 +233,7 @@ h1 > a:hover {
 }
 #about-team img {
   max-width: 75%;
-  margin-top: 20px;
+  margin-top: 25px;
 }
 #about-team .col-md-12:last-child {
   padding: 0;
@@ -347,11 +347,6 @@ h1 > a:hover {
   #about img,
   #about-team img {
     max-width: 100%;
-    margin-top: 0;
-  }
-  #about .col-md-12:last-child,
-  #about-team .col-md-12:last-child {
-    padding: 0 15px;
   }
 }
 /* Small devices landscape(tablets, 768px and up) */
@@ -363,6 +358,15 @@ h1 > a:hover {
   .nav-pills > li, .nav-pills > li + li {
     margin: 0 20px 0 0;
     display: inline-block;
+  }
+
+  #about img,
+  #about-team img {
+    margin-top: 0;
+  }
+  #about .col-md-12:last-child,
+  #about-team .col-md-12:last-child {
+    padding: 0 15px;
   }
 }
 /* Large devices (large desktops, 1200px and up) */

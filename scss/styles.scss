@@ -203,7 +203,7 @@ h1 {
 	}
 	img {
 		max-width: 75%;
-		margin-top: 20px;
+		margin-top: 25px;
 	}
 	.col-md-12:last-child {
 		padding: 0;
@@ -315,10 +315,6 @@ h1 {
 		}
 		img {
 			max-width: 100%;
-			margin-top: 0;
-		}
-		.col-md-12:last-child {
-			padding: 0 15px;
 		}
 	}
 }
@@ -340,7 +336,15 @@ h1 {
 			display: inline-block;
 		}
 	}
-
+	#about,
+	#about-team {
+		img {
+			margin-top: 0;
+		}
+		.col-md-12:last-child {
+			padding: 0 15px;
+		}
+	}
 }
 
 /* Large devices (large desktops, 1200px and up) */
