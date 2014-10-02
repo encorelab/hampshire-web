@@ -18,7 +18,7 @@
 
 #about {
 	background: url('../images/background_about.jpg') no-repeat;
-	background-size: 150%;
+	background-size: 300%;
 	background-position: 25% 50%;
 }
 
@@ -161,11 +161,15 @@ h1 {
 			@extend %transition;
 		}
 	}
+}
+footer {
+	width: 100%;
+	background: $darkslategray;
 	.btn-top {
 		@include button($white);
 		background: none;
 		color: $white;
-		margin-bottom: 50px;
+		margin: -65px 50px 0 0;
 		span {
 			content: url('../images/caret_upw.svg');
 			margin-right: 20px;
