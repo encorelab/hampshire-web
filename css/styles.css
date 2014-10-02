@@ -2,7 +2,7 @@
 #about-team .join-now, #about .join-now:hover,
 #about-team .join-now:hover, #about-team p > a,
 #about-team h4 > a, #about-team p > a:hover,
-#about-team h4 > a:hover {
+#about-team h4 > a:hover, #about-team .btn-top, #about-team .btn-top:hover {
   transition: all 0.4s ease-in-out;
 }
 
@@ -310,6 +310,35 @@ h1 > a:hover {
 #about-team p > a:hover,
 #about-team h4 > a:hover {
   color: white;
+}
+#about-team .btn-top {
+  font-size: 1.2em;
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 4px;
+  padding: 10px 25px;
+  background-image: none;
+  box-shadow: none;
+  background: none;
+  color: white;
+  margin-bottom: 50px;
+}
+#about-team .btn-top:hover {
+  cursor: pointer;
+  background-color: white;
+  color: white;
+  border-color: white;
+}
+#about-team .btn-top span {
+  content: url("../images/caret_upw.svg");
+  margin-right: 20px;
+}
+#about-team .btn-top:hover {
+  color: #0b0b0b;
+}
+#about-team .btn-top:hover span {
+  content: url("../images/caret_up.svg");
+  margin-right: 20px;
 }
 
 /********** MEDIA QUERIES **********/

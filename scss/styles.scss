@@ -161,6 +161,23 @@ h1 {
 			@extend %transition;
 		}
 	}
+	.btn-top {
+		@include button($white);
+		background: none;
+		color: $white;
+		margin-bottom: 50px;
+		span {
+			content: url('../images/caret_upw.svg');
+			margin-right: 20px;
+		}
+		&:hover {
+			color: $black;
+			span {
+				content: url('../images/caret_up.svg');
+				margin-right: 20px;
+			}
+		}
+	}
 }
 
 /********** MEDIA QUERIES **********/
