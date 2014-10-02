@@ -1,4 +1,4 @@
-.btn, .btn:hover, .nav-pills > li > a, .nav-pills > li + li > a, .nav-pills > li > a:hover, .nav-pills > li + li > a:hover, #about .join-now,
+.btn, .btn:hover, .projects .btn-back, .projects .btn-back:hover, .nav-pills > li > a, .nav-pills > li + li > a, .nav-pills > li > a:hover, .nav-pills > li + li > a:hover, #about .join-now,
 #about-team .join-now, #about .join-now:hover,
 #about-team .join-now:hover, #about-team p > a,
 #about-team h4 > a, #about-team p > a:hover,
@@ -77,6 +77,71 @@ a.thumbnail.active {
   padding: 25px;
 }
 
+.projects h3,
+.projects #environment h3:first-child {
+  margin: 0 0 20px;
+  font-size: 2em;
+}
+.projects section > p {
+  padding-right: 20px;
+}
+.projects #environment {
+  background: none;
+}
+.projects #environment h3 {
+  color: #0b0b0b;
+}
+.projects .btn-back {
+  font-size: 1.2em;
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 4px;
+  padding: 10px 25px;
+  background-image: none;
+  box-shadow: none;
+  border: 2px solid lightslategrey;
+  color: #0b0b0b;
+}
+.projects .btn-back:hover {
+  cursor: pointer;
+  background-color: white;
+  color: white;
+  border-color: white;
+}
+.projects .btn-back span {
+  content: url("../images/caret_backb.svg");
+  margin-right: 20px;
+}
+.projects .btn-back:hover {
+  border: 2px solid lightslategrey;
+  background: lightslategrey;
+  color: white;
+}
+.projects .btn-back:hover span {
+  content: url("../images/caret_backw.svg");
+  margin-right: 20px;
+}
+
+/* Small devices portrait (tablets, 768px and up) */
+@media all and (min-width: 768px) {
+  .projects #environment .issues {
+    padding-top: 100px;
+    background: url("../images/lines_grey.png") 50% 42% no-repeat;
+    background-size: 55%;
+  }
+}
+#leaf-drop header {
+  background: url("../images/header_leafdrop.jpg") no-repeat;
+  width: 100%;
+  height: 200px;
+  background-size: 100%;
+}
+#leaf-drop aside {
+  background: #ed8930;
+  padding: 20px;
+  color: white;
+}
+
 .jumbotron {
   background: url("../images/background_home.jpg") no-repeat;
   background-size: cover;
@@ -145,7 +210,7 @@ h1 > a:hover {
 #environment .col-sm-2 {
   padding: 0;
 }
-#environment .row {
+#environment .issues {
   padding-top: 25px;
 }
 
@@ -318,7 +383,7 @@ h1 > a:hover {
   #environment .col-sm-2:first-child {
     margin-left: 16.66666667%;
   }
-  #environment .row {
+  #environment .issues {
     padding-top: 100px;
     background: url("../images/lines_white.png") 50% 42% no-repeat;
     background-size: 55%;

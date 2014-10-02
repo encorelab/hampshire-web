@@ -1,64 +1,8 @@
 @import 'variables';
+@import 'typography';
+@import 'main';
+@import 'projects';
 
-// ********** typography **********
-body {
-	font-family: $font-family--primary;
-	font-weight: $font-weight--light;
-}
-
-h1 > a,
-.nav-pills > li > a,
-#environment h2,
-#environment h3,
-#about h2,
-#about p,
-.panel-title > a,
-.panel-body {
-	color: $white;
-	font-weight: $font-weight--light;
-}
-
-h2 {
-	margin: 25px 0;
-	font-size: 3em;
-	font-weight: $font-weight--light;
-}
-
-h3 {
-	font-size: 2em;
-	font-weight: $font-weight--light;
-}
-
-p {
-	font-size: 1.1em;
-	line-height: 1.6em;
-}
-
-a:hover {
-	text-decoration: none;
-}
-
-a.thumbnail:hover,
-a.thumbnail:focus,
-a.thumbnail.active {
-	border: none;
-	color: rgba(0, 0, 0, 0);
-}
-
-.btn {
-	@include button(dodgerblue);
-	padding: 10px 25px;
-}
-
-.thumbnail {
-	background-color: rgba(0, 0, 0, 0);
-	border: none;
-	box-shadow: none;
-}
-
-.container-fluid {
-	padding: 25px;
-}
 
 // ********** background images **********
 .jumbotron {
@@ -130,7 +74,7 @@ h1 {
 	.col-sm-2 {
 		padding: 0;
 	}
-	.row {
+	.issues {
 		padding-top: 25px;
 	}
 }
@@ -285,7 +229,7 @@ h1 {
 				margin-left: 16.66666667%;
 			}
 		}
-		.row {
+		.issues {
 			padding-top: 100px;
 			background: url('../images/lines_white.png') 50% 42% no-repeat;
 			background-size: 55%;

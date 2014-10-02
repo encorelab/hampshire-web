@@ -1,8 +1,10 @@
 // ********** colours **********
 $white					: #fff;
 $black					: #0b0b0b;
-$dodgerblue				: #2998db;
 $darkslategray			: #382d5d;
+$lightslategray			: #778899;
+$dodgerblue				: #2998db;
+$peruorange				: #ed8930;
 
 // ********** typography **********
 $font-url--google		: 'http://fonts.googleapis.com/css?family=Open+Sans:300,400,700';
@@ -16,10 +18,10 @@ $font-weight--bold		: 700;
 	transition: all 0.4s ease-in-out;
 }
 
-@mixin button($color) {
+@mixin button($colour) {
 	font-size: 1.2em;
-	background-color: $color;
-	border: 2px solid $color;
+	background-color: $colour;
+	border: 2px solid $colour;
 	border-radius: 4px;
 	padding: 10px 25px;
 	background-image: none;
@@ -28,8 +30,8 @@ $font-weight--bold		: 700;
 	&:hover {
 		cursor: pointer;
 		background-color: $white;
-		color: $color;
-		border-color: $color;
+		color: $colour;
+		border-color: $colour;
 		@extend %transition;
 	}
 }
