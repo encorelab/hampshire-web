@@ -21,6 +21,10 @@
 	section > p {
 		padding-right: 20px;
 	}
+	.subsequent-heading,
+	.btn {
+		margin-top: 15px;
+	}
 	#environment {
 		background: none;
 		h3 {
@@ -63,4 +67,8 @@
 
 #leaf-drop {
 	@include projects_page(leafdrop, $peruorange);
+}
+
+#salamander-watch {
+	@include projects_page(salamander, $goldenrod);
 }

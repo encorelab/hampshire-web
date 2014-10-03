@@ -164,12 +164,14 @@ h1 {
 }
 footer {
 	width: 100%;
+	height: 75px;
+	padding-bottom: 25px;
 	background: $darkslategray;
 	.btn-top {
 		@include button($white);
 		background: none;
 		color: $white;
-		margin: -65px 50px 0 0;
+		margin-right: 25px;
 		span {
 			content: url('../images/caret_upw.svg');
 			margin-right: 20px;
@@ -280,6 +282,11 @@ footer {
 		}
 		img {
 			max-width: 100%;
+		}
+	}
+	footer {
+		.btn-top {
+			margin: -65px 50px 0 0;
 		}
 	}
 }
