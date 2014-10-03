@@ -466,6 +466,9 @@ footer .btn-top:hover span {
     max-width: 100%;
   }
 
+  footer {
+    height: 0;
+  }
   footer .btn-top {
     margin: -65px 50px 0 0;
   }
