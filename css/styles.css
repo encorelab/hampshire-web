@@ -328,12 +328,6 @@ h1 > a:hover {
   color: white;
 }
 
-.nsf-logo {
-  width: 100%;
-  max-width: 75px;
-  padding: 10px 0;
-  margin-left: 50px;
-}
 
 footer {
   width: 100%;
@@ -341,6 +335,16 @@ footer {
   display: block;
   padding-bottom: 25px;
   background: #fff;
+}
+footer p {
+  padding-left: 20px;
+  padding-top: 25px;
+}
+footer .nsf-logo {
+  width: 100%;
+  max-width: 75px;
+  padding: 10px 0;
+  margin-left: 50px;
 }
 footer .btn-top {
   font-size: 1.2em;
@@ -352,8 +356,7 @@ footer .btn-top {
   box-shadow: none;
   background: none;
   color: #382d5d;
-  margin-right: 25px;
-  margin-top: 25px;
+  margin: 25px 25px;
 }
 footer .btn-top:hover {
   cursor: pointer;
@@ -475,8 +478,8 @@ footer .btn-top:hover span {
 /*  pre-nsf-logo
   footer {
     height: 0;
-  }
-  footer .btn-top {
+  }*/
+/*  footer .btn-top {
     margin: -65px 50px 0 0;
   }*/
 }
