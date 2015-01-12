@@ -328,39 +328,48 @@ h1 > a:hover {
   color: white;
 }
 
+
 footer {
   width: 100%;
   height: 75px;
+  display: block;
   padding-bottom: 25px;
-  background: #382d5d;
+  background: #fff;
+}
+footer p {
+  padding-left: 20px;
+  padding-top: 25px;
+}
+footer .nsf-logo {
+  width: 100%;
+  max-width: 75px;
+  padding: 10px 0;
+  margin-left: 50px;
 }
 footer .btn-top {
   font-size: 1.2em;
   background-color: white;
-  border: 2px solid white;
+  border: 2px solid #382d5d;
   border-radius: 4px;
   padding: 10px 25px;
   background-image: none;
   box-shadow: none;
   background: none;
-  color: white;
-  margin-right: 25px;
+  color: #382d5d;
+  margin: 25px 25px;
 }
 footer .btn-top:hover {
   cursor: pointer;
-  background-color: white;
+  background-color: #382d5d;
   color: white;
-  border-color: white;
+  border-color: #382d5d;
 }
 footer .btn-top span {
-  content: url("../images/caret_upw.svg");
+  content: url("../images/caret_up.svg");
   margin-right: 20px;
 }
-footer .btn-top:hover {
-  color: #0b0b0b;
-}
 footer .btn-top:hover span {
-  content: url("../images/caret_up.svg");
+  content: url("../images/caret_upw.svg");
   margin-right: 20px;
 }
 
@@ -466,12 +475,13 @@ footer .btn-top:hover span {
     max-width: 100%;
   }
 
+/*  pre-nsf-logo
   footer {
     height: 0;
-  }
-  footer .btn-top {
+  }*/
+/*  footer .btn-top {
     margin: -65px 50px 0 0;
-  }
+  }*/
 }
 /* Small devices landscape(tablets, 768px and up) */
 /* Medium devices (desktops, 992px and up) */
