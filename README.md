@@ -11,6 +11,8 @@
 ```
 =============
 
+Trivial change
+
 # The MIT License (MIT)
 
 Copyright (c) 2014 Encore Lab Toronto @ University of Toronto
